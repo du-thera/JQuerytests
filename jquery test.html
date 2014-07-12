@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>jquery test</title>
+<script type="text/javascript" src="./js/jquery-2.1.1.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/test.css">
+<script>
+	$(document).ready(function(){
+	//复习昨天
+		
+		// $("p.a").mouseover(function(){
+		// 		$("ul.left").show();
+		// });
+		// $("p.a").mouseout(function(){
+		// 		$("ul.left").hide();
+		// });
+		// 	$("p.a").click(function(){
+		// 		$("ul.left").fadeIn(1000);
+		// });
+			// $("p.a").click(function(){
+			// 	$("ul.left").show();
+			// 	});
+			// $("p.a").dblclick(function(){
+			// 	$("ul.left").hide();
+			// 	});
+			// $("p.c").mouseover(function(){
+			// 	$("ul.right").slideDown("slow");
+			// });
+			// $("p.c").mouseout(function(){
+			// 	$("ul.right").slideUp("slow")
+			// });
+			// $("p.c").mouseout(function(){
+			// 	$("ul.right").slideToggle("slow");
+			// });
+
+			// $("p.c").click(function(){
+				
+			// 	$("ul.right").fadeIn();
+			// });
+			// $("p.c").mouseout(function(){
+				
+			// 	$("ul.right").fadeOut();
+			// });
+
+			// $("p.c").click(function(){
+
+			// 	$("div.re").animate({left:'25em'});
+				
+			// });
+	// 动画效果
+		$("span.a").click(function(){
+			$("div.an").animate({left:"5em"},5000);
+			$("div.an").animate({fontSize:"2em"},3000);
+		});
+		$("span.b").click(function(){
+			$("div.an").stop();
+		});
+		$("span.c").click(function(){
+			$("div.an").stop(true);
+		});
+		$("span.d").click(function(){
+			$("div.an").stop(true,true);
+		});
+
+		$("span.e").click(function(){
+			$("p.on").hide(1000);
+		});
+	// Chaining 允许我们在一条语句中允许多个 jQuery 方法（在相同的元素上）。 
+		// $(".clickme").click(function(){
+		// 	$("div.a").css("color","red").slideUp("slow").slideDown("slow");
+		// });
+		// 获取HTML内容
+		// $(".but1").click(function(){
+		// 	alert("TEXT:" + $(".texts").text());
+		// });
+		// $(".but2").click(function(){
+		// 	alert("HTML:"+$(".texts").html());
+		// });
+		// $(".but3").click(function(){
+		// 	alert("name:" + $(".ipttext").val());
+		// });
+		// $(".but4").click(function(){
+		// 	alert($(".showhref").attr("href"));
+		// });
+		//更改HTML的值
+		  $("#btn1").click(function(){
+		    $("#test1").text("Hello world!");
+		  });
+		  $("#btn2").click(function(){
+		    $("#test2").html("<b>Hello world!</b>");
+		  });
+		  $("#btn3").click(function(){
+		    $("#test3").val("Dolly Duck");
+  			});
+	});
+
+</script>
+</head>
+<body> 
+	<!-- 复习昨天 -->
+	<!-- <div class="test one">
+		<div class="le">
+			<p class="a"> 我是测试</p>
+			 <ul class="left">
+			 	<li>我是测试数据1</li>
+			 	<li>我是测试数据2</li>
+			 </ul>
+		</div>
+		
+		<div class="re">
+			<p class="c"> 我是测试</p>
+			 <ul class="right">
+			 	<li>我是测试数据1</li>
+			 	<li>我是测试数据2</li>
+			 </ul>		
+		</div>
+	</div> -->
+	<!-- 动画效果 -->
+	<!-- <div class="test two">	
+		<p >
+			<span class="a">开始</span>
+			<span class="b">停止</span>
+			<span class="c">停止所有</span>
+			<span class="d">停止但要完成</span>
+			<span class="e">点击我隐藏文字</span>
+			<p class="on">我是文字啦。</p>
+		</p>
+		<div class="an">我是动画</div>
+	</div> -->
+   <!--  Chaining 允许我们在一条语句中允许多个 jQuery 方法（在相同的元素上）。 -->
+	<!-- <div class="test three">
+		<p class="clickme">你可以点击我啊</p>
+		<div class="a">
+			<p >测试数据1</p>
+			<p >测试数据2</p>
+			<p >测试数据3</p>
+		</div>
+	</div> -->
+	<!-- 获取更改HTML内容 -->
+	<div class="test four">
+		<!-- <p class="texts">我是段落<b>我是粗体</b>文本</p>
+		<p>name:<input class="ipttext" type="text" value="蛋蛋"></p>
+		<p><a class="showhref" href="http://www.baidu.com">百度</a></p>
+		<button class="but1">显示文本</button>
+		<button class="but2">显示HTML</button>
+		<button class="but3">点击我会显示name</button>
+		<button class="but4">显示href值</button>
+		<br /> -->
+		<p id="test1">这是段落。</p>
+		<p id="test2">这是另一个段落。</p>
+		<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+		<button id="btn1">设置文本</button>
+		<button id="btn2">设置 HTML</button>
+		<button id="btn3">设置值</button>
+	</div>
+</body>
+</html>

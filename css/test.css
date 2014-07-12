@@ -1,0 +1,53 @@
+.test{}
+.le,.re{
+	float: left; 
+	position:absolute;
+}
+.le .a,.re .c,.one ul{
+	border: 1px solid aqua;
+	font-size: 1em;
+	text-align: center;
+	background-color: #c0c0c0;
+	color: aqua;
+	margin: 0em 0.1em  ;
+	list-style-type: none;
+	position:relative ;
+}
+p.a,p.c{width: 20em;}
+.left li,.right li{
+	width: 15em;
+	height: 3em;
+	line-height: 3em;
+}
+.left,.right{display: none; }
+
+.two p .a ,.two p .b ,.two p .c,.two p .d,.two p .e{
+	border: 0.1em solid aqua ;
+	background-color:aquamarine;
+	color: #258;
+	border-radius:15px;   
+}
+.two .an{
+	position: absolute;
+	width: 10em;
+	height: 2.5em;
+	line-height: 2.5em;
+	text-align: center;
+	font-size: 1em;
+	color: #f0f;
+	border: 1px solid aqua;
+
+}
+
+
+.three .clickme,.three .a {
+	border: 1px solid aqua;
+	font-size: 1em;
+	text-align: center;
+	background-color: #c0c0c0;
+	color: aqua;
+	margin: 0;
+	width: 20em;
+
+}
+

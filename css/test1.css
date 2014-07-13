@@ -1,0 +1,33 @@
+.tow li{
+	position: inherit;
+	width: 10em;
+	height: 5em;
+	float: left;
+	border: 0.1em solid aqua;
+	border-radius: 0.3em;
+	list-style-type: none;
+	margin: 0.5em;
+	display: none;
+}
+.tow .but3{
+	display: none;
+}
+.tow li.a,.tow li.e,.tow li.h{background-color: red;}
+.tow li.b,.tow li.f{background-color: green;}
+.tow li.c,.tow li.g{background-color: blue;}
+.tow{position: absolute;}
+.tow li.h{position: absolute;display: block;}
+.three .d1{
+	width: 20em;
+	height: 8em;
+	text-align: center;
+	background-color: aqua;
+}
+
+.feel{
+	border-radius: 0.7em;
+	font-size: 0.8em;
+}
+.aqua{
+	color: black;
+}
